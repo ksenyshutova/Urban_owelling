@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Urban owelling</title>
+</head>
+
+<body>
+    <section class="section__top hidden-tablet">
+        <nav class="section__menu container">
+            <ul class="section__menu-list">
+                <li class="section__menu-item">
+                    <a class="section__menu-link" href="/">Доставка и оплата</a>
+                </li>
+                <li class="section__menu-item">
+                    <a class="section__menu-link" href="/">Гарантия и возврат</a>
+                </li>
+                <li class="section__menu-item section__menu-item_lang">
+                    <a class="section__menu-link" href="/">en</a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <img src="./src/images/logo.svg" alt="Urban owelling" class="logo__image" width="217" height="56"
+                    loading="lazy">
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__menu hidden-tablet">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="/">Каталог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="/">О компании</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search__block hidden-tablet">
+                <form class="form__first">
+                    <input type="search" name="text" class="form__search" placeholder="Лампы">
+                    <input type="submit" name="submit" class="form__submit" value="">
+                </form>
+                <div class="form__second">
+                    <button type="button" class="form__btn">Корзина</button>
+                    <span class="form__count">0</span>
+                </div>
+            </div>
+            <button class="header__burger-button burger-button visible-tablet" type="button"
+                onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section container">
+            <header class="section__header">
+                <h2 class="section__title">Результаты поиска</h2>
+            </header>
+            <div class="section__body">
+                <div class="services">
+                    <ul class="services__list">
+                        <li class="services__item services__item_basket">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
+                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                    <button class="service-card__details hidden-mobile" type="button">Подробнее</button>
+                                </div>
+                                <div class="service-card__information hidden-mobile">
+                                    <div class="service-card__name">Встраиваемый светильник Markt</div>
+                                    <div class="service-card__price">
+                                        <div class="service-card__price_new">3 490 ₽</div>
+                                        <div class="service-card__price_old">5 060 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="service-card__information visible-mobile">
+                                    <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
+                                    <div class="service-card__price_normal">3 040 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item services__item_basket">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Линейный светильник ARG</div>
+                                    <div class="service-card__price_normal">6 700 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item services__item_basket">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/ledLamp.svg" alt="LED" class="service-card__img">
+                                    <button class="service-card__btn" type="button">Акция</button>
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Сведодиодный светильник</div>
+                                    <div class="service-card__price">
+                                        <div class="service-card__price_new">5 060 ₽</div>
+                                        <div class="service-card__price_old">6 060 ₽</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
+                                </div>
+                                <div class="service-card__information hidden-mobile">
+                                    <div class="service-card__name">Встраиваемый светильник Markt</div>
+                                    <div class="service-card__price_normal">3 490 ₽</div>
+                                </div>
+                                <div class="service-card__information visible-mobile">
+                                    <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
+                                    <div class="service-card__price_normal">3 040 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+
+                        <li class="services__item">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
+                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Линейный светильник ARG</div>
+                                    <div class="service-card__price hidden-mobile">
+                                        <div class="service-card__price_new">6 700 ₽</div>
+                                        <div class="service-card__price_old">6 060 ₽</div>
+                                    </div>
+                                    <div class="service-card__price_normal">6 700 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/ledLamp.svg" alt="LED" class="service-card__img">
+                                    <button class="service-card__btn visible-mobile" type="button">Акция</button>
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Сведодиодный светильник </div>
+                                    <div class="service-card__price_normal hidden-mobile">5 060 ₽</div>
+                                    <div class="service-card__price visible-mobile">
+                                        <div class="service-card__price_new">5 060 ₽</div>
+                                        <div class="service-card__price_old">6 060 ₽</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item hidden-mobile">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
+                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                </div>
+                                <div class="service-card__information hidden-mobile">
+                                    <div class="service-card__name">Встраиваемый светильник Markt</div>
+                                    <div class="service-card__price">
+                                        <div class="service-card__price_new">3 490 ₽</div>
+                                        <div class="service-card__price_old">6 060 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="service-card__information visible-mobile">
+                                    <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
+                                    <div class="service-card__price_normal">3 040 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item hidden-mobile">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Линейный светильник ARG</div>
+                                    <div class="service-card__price_normal">6 700 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item visible-mobile">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
+                                </div>
+                                <div class="service-card__information">
+                                    <div class="service-card__name">Линейный светильник ARG</div>
+                                    <div class="service-card__price_normal">6 700 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="services__item visible-mobile">
+                            <article class="service-card">
+                                <div class="service-card__body">
+                                    <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
+                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                </div>
+                                <div class="service-card__information hidden-mobile">
+                                    <div class="service-card__name">Встраиваемый светильник Markt</div>
+                                    <div class="service-card__price">
+                                        <div class="service-card__price_new">3 490 ₽</div>
+                                        <div class="service-card__price_old">6 060 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="service-card__information visible-mobile">
+                                    <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
+                                    <div class="service-card__price_normal">3 040 ₽</div>
+                                </div>
+                            </article>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__navigation hidden-only-tablet">
+                <div class="footer__navigation_main">
+                    <a class="footer__logo" href="/">
+                        <img src="./src/images/logo_white.svg" alt="Urban owelling" class="logo__image" width="239"
+                            height="62" loading="lazy">
+                    </a>
+                    <div class="footer__extra hidden-tablet">
+                        <p class="footer__copyright">
+                            Этот сайт защищен от спама службой reCAPTCHA Google.
+                        <p class="footer__copyright_line">Политика конфиденциальности/Условия
+                            предоставления услуг</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__contacts">
+                    <address class="footer__contacts-body">
+                        <p class="footer__contacts-name">Адрес</p>
+                        <p class="footer__contacts-description">Текст, Текст, Текст</p>
+                    </address>
+                    <address class="footer__contacts-body">
+                        <p class="footer__contacts-name">Контакты</p>
+                        <p class="footer__contacts-description">Email: <a
+                                href="mailto:urban.dwelling@yandex.com">urban.dwelling@yandex.com</a></p>
+                        <p class="footer__contacts-description">Телефон: <a href="tel:89999999999">8 (999)
+                                999-99-99</a></p>
+                    </address>
+                </div>
+
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <p class="footer__contacts-name">Услуги</p>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__contacts-description" href="/">Каталог</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__contacts-description" href="/">О компании</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__contacts-description" href="/">Контакты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__contacts-description" href="/">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link footer__contacts-description" href="/">Гарантия и
+                                возврат</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__information">
+                    <div class="footer__information-links">
+                        <a class="footer__information-link" href="/">Публичная оферта</a></br>
+                        <a class="footer__information-link" href="/">Политика персональных данных</a>
+                    </div>
+                    <div class="footer__icons">
+                        <ul class="footer__icons-list">
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Мир</span>
+                                    <img src="./src/images/mir.svg" alt="Mir" class="footer__icons-img">
+                                </a>
+                            </li>
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Visa</span>
+                                    <img src="./src/images/visa.svg" alt="Visa" class="footer__icons-img">
+                                </a>
+                            </li>
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Mastercard</span>
+                                    <img src="./src/images/mastercard.svg" alt="Mastercard" class="footer__icons-img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__extra_mobile visible-mobile">
+                        <p class="footer__copyright">
+                            Этот сайт защищен от спама службой reCAPTCHA Google.
+                        <p class="footer__copyright_line">Политика конфиденциальности/Условия
+                            предоставления услуг</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__navigation visible-only-tablet">
+                <a class="footer__logo" href="/">
+                    <img src="./src/images/logo_white.svg" alt="Urban owelling" class="logo__image" width="239"
+                        height="62" loading="lazy">
+                </a>
+                <div class="footer__contacts">
+                    <div class="footer__address">
+                        <address class="footer__contacts-body">
+                            <p class="footer__contacts-name">Адрес</p>
+                            <p class="footer__contacts-description">Текст, Текст, Текст</p>
+                        </address>
+                        <div class="footer__information-links">
+                            <a class="footer__information-link" href="/">Публичная оферта</a></br>
+                            <a class="footer__information-link" href="/">Политика персональных данных</a>
+                        </div>
+                    </div>
+                    <address class="footer__contacts-body">
+                        <p class="footer__contacts-name">Контакты</p>
+                        <p class="footer__contacts-description">Email: <a
+                                href="mailto:urban.dwelling@yandex.com">urban.dwelling@yandex.com</a></p>
+                        <p class="footer__contacts-description">Телефон: <a href="tel:89999999999">8 (999)
+                                999-99-99</a></p>
+                    </address>
+
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <p class="footer__contacts-name">Услуги</p>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link footer__contacts-description" href="/">Каталог</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link footer__contacts-description" href="/">О компании</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link footer__contacts-description" href="/">Контакты</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link footer__contacts-description" href="/">Доставка и оплата</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link footer__contacts-description" href="/">Гарантия и
+                                    возврат</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__information">
+                    <div class="footer__icons">
+                        <ul class="footer__icons-list">
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Мир</span>
+                                    <img src="./src/images/mir.svg" alt="Mir" class="footer__icons-img">
+                                </a>
+                            </li>
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Visa</span>
+                                    <img src="./src/images/visa.svg" alt="Visa" class="footer__icons-img">
+                                </a>
+                            </li>
+                            <li class="footer__icons-item">
+                                <a class="footer__icons-link" href="/">
+                                    <span class="visually-hidden">Mastercard</span>
+                                    <img src="./src/images/mastercard.svg" alt="Mastercard" class="footer__icons-img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__extra_mobile">
+                        <p class="footer__copyright">
+                            Этот сайт защищен от спама службой reCAPTCHA Google.
+                        <p class="footer__copyright_line">Политика конфиденциальности/Условия
+                            предоставления услуг</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-tablet" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Каталог</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">О компании</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

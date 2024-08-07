@@ -1,0 +1,73 @@
+.form {
+  &__first {
+    position: relative;
+  }
+
+  &__second {
+    position: relative;
+  }
+
+  &__search {
+    width: 170px;
+    height: 40px;
+    border-radius: 88.64px;
+    border: 1px solid $color-white;
+    padding: 11px 0 12px 21px;
+
+    @include desktop-s {
+      display: none;
+    }
+
+    &::placeholder {
+      font-family: 'Lato-Regular';
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-dark;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    left: 77%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: url("../images/search_black.svg") center center/50% auto no-repeat;
+
+    @include desktop-s {
+      position: relative;
+      left: 0;
+      background: url("../images/search_white.svg") center center/50% auto no-repeat $color-dark;
+    }
+  }
+
+  &__btn {
+    font-family: 'Lato-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 50px;
+    background: url(../images/basket.svg) 18% 26% / 15% auto no-repeat $color-dark;
+    box-sizing: border-box;
+    width: 138px;
+    min-height: 40px;
+    background-color: $color-dark;
+    color: $color-white;
+    border-radius: 100px;
+  }
+
+  &__count {
+    position: absolute;
+    color: $color-dark;
+    font-family: 'Lato-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    left: 30%;
+    top: 10%;
+    width: 18px;
+    height: 18px;
+    background: $color-white;
+    border-radius: 50%;
+    text-align: center;
+  }
+}

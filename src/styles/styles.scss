@@ -1,0 +1,17 @@
+@import './normalize',
+'./fonts',
+'./media',
+'./variables',
+'./utils',
+'./globals';
+
+@import './blocks/header',
+'./blocks/burger-button',
+'./blocks/form',
+'./blocks/search',
+'./blocks/cross-button',
+'./blocks/mobile-overlay',
+'./blocks/services',
+'./blocks/section',
+'./blocks/service-card',
+'./blocks/footer';

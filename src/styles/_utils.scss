@@ -1,0 +1,60 @@
+@import "variables";
+
+.container {
+  max-width: calc($container-width + $container-padding-x * 2);
+  margin-inline: auto;
+  padding-inline: $container-padding-x;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.visible-tablet {
+  @include tablet-above {
+    display: none !important;
+  }
+}
+
+.visible-only-tablet {
+  @include mobile {
+    display: none !important;
+  }
+
+  @include tablet-above {
+    display: none !important;
+  }
+}
+
+.hidden-only-tablet {
+  @media (min-width: $mobile-above) and (max-width: $tablet) {
+    display: none !important;
+  }
+}
