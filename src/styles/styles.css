@@ -328,7 +328,7 @@ a {
   border: 1px solid rgb(245, 245, 245);
   padding: 11px 0 12px 21px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .form__search {
     display: none;
   }
@@ -354,7 +354,7 @@ a {
   border: none;
   background: url("../images/search_black.svg") center center/50% auto no-repeat;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .form__submit {
     position: relative;
     left: 0;
@@ -497,7 +497,7 @@ a {
   font-weight: 600;
   font-size: 44px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .section__title {
     font-size: 40px;
   }
