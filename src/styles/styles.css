@@ -538,6 +538,7 @@ a {
   color: rgb(245, 245, 245);
   padding: 10px;
   border-radius: 100px;
+  border: none;
 }
 @media (max-width: 700px) {
   .service-card__btn {
