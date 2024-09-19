@@ -16,6 +16,7 @@
         width: 50%;
         height: 2px;
         background-color: $color-dark;
+        -webkit-background-color: $color-dark;
         border-radius: 5px;
         box-shadow: 0 -8px, 0 8px;
     }
