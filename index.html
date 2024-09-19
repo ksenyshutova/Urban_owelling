@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="section__top hidden-tablet">
+    <div class="section__top hidden-tablet">
         <nav class="section__menu container">
             <ul class="section__menu-list">
                 <li class="section__menu-item">
@@ -24,29 +24,27 @@
                 </li>
             </ul>
         </nav>
+    </div>
 
-    </section>
     <header class="header">
         <div class="header__inner container">
             <a href="/" class="header__logo">
                 <img src="./src/images/logo.svg" alt="Urban owelling" class="logo__image" width="217" height="56"
                     loading="lazy">
             </a>
-            <div class="header__wrapper">
-                <nav class="header__menu hidden-tablet">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Каталог</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">О компании</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="header__menu-link" href="/">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="header__menu hidden-tablet">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Каталог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">О компании</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
             <div class="search__block hidden-tablet">
                 <form class="form__first">
@@ -74,10 +72,10 @@
                 <div class="services">
                     <ul class="services__list">
                         <li class="services__item services__item_basket">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
-                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                    <div class="service-card__btn hidden-mobile">Акция</div>
                                     <button class="service-card__details hidden-mobile" type="button">Подробнее</button>
                                 </div>
                                 <div class="service-card__information hidden-mobile">
@@ -91,11 +89,11 @@
                                     <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
                                     <div class="service-card__price_normal">3 040 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item services__item_basket">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
                                 </div>
@@ -103,14 +101,14 @@
                                     <div class="service-card__name">Линейный светильник ARG</div>
                                     <div class="service-card__price_normal">6 700 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item services__item_basket">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/ledLamp.svg" alt="LED" class="service-card__img">
-                                    <button class="service-card__btn" type="button">Акция</button>
+                                    <div class="service-card__btn">Акция</div>
                                 </div>
                                 <div class="service-card__information">
                                     <div class="service-card__name">Сведодиодный светильник</div>
@@ -119,11 +117,11 @@
                                         <div class="service-card__price_old">6 060 ₽</div>
                                     </div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
                                 </div>
@@ -135,15 +133,14 @@
                                     <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
                                     <div class="service-card__price_normal">3 040 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
-
                         <li class="services__item">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
-                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                    <div class="service-card__btn hidden-mobile">Акция</div>
                                 </div>
                                 <div class="service-card__information">
                                     <div class="service-card__name">Линейный светильник ARG</div>
@@ -153,14 +150,14 @@
                                     </div>
                                     <div class="service-card__price_normal visible-mobile">6 700 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/ledLamp.svg" alt="LED" class="service-card__img">
-                                    <button class="service-card__btn visible-mobile" type="button">Акция</button>
+                                    <div class="service-card__btn visible-mobile">Акция</div>
                                 </div>
                                 <div class="service-card__information">
                                     <div class="service-card__name">Сведодиодный светильник </div>
@@ -170,14 +167,14 @@
                                         <div class="service-card__price_old">6 060 ₽</div>
                                     </div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item hidden-mobile">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
-                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                    <div class="service-card__btn hidden-mobile">Акция</div>
                                 </div>
                                 <div class="service-card__information hidden-mobile">
                                     <div class="service-card__name">Встраиваемый светильник Markt</div>
@@ -190,11 +187,11 @@
                                     <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
                                     <div class="service-card__price_normal">3 040 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item hidden-mobile">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
                                 </div>
@@ -202,11 +199,11 @@
                                     <div class="service-card__name">Линейный светильник ARG</div>
                                     <div class="service-card__price_normal">6 700 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item visible-mobile">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampARG.svg" alt="ARG" class="service-card__img">
                                 </div>
@@ -214,14 +211,14 @@
                                     <div class="service-card__name">Линейный светильник ARG</div>
                                     <div class="service-card__price_normal">6 700 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
 
                         <li class="services__item visible-mobile">
-                            <article class="service-card">
+                            <div class="service-card">
                                 <div class="service-card__body">
                                     <img src="./src/images/lampMarkt.svg" alt="Markt" class="service-card__img">
-                                    <button class="service-card__btn hidden-mobile" type="button">Акция</button>
+                                    <div class="service-card__btn hidden-mobile">Акция</div>
                                 </div>
                                 <div class="service-card__information hidden-mobile">
                                     <div class="service-card__name">Встраиваемый светильник Markt</div>
@@ -234,7 +231,7 @@
                                     <div class="service-card__name">SuperDZS Аэрогриль efRP6iSi</div>
                                     <div class="service-card__price_normal">3 040 ₽</div>
                                 </div>
-                            </article>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -253,19 +250,20 @@
                     <div class="footer__extra hidden-tablet">
                         <p class="footer__copyright">
                             Этот сайт защищен от спама службой reCAPTCHA Google.
+                        </p>
                         <p class="footer__copyright_line">Политика конфиденциальности/Условия
-                            предоставления услуг</p>
+                            предоставления услуг
                         </p>
                     </div>
                 </div>
 
                 <div class="footer__contacts">
                     <address class="footer__contacts-body">
-                        <p class="footer__contacts-name">Адрес</p>
+                        <div class="footer__contacts-name">Адрес</div>
                         <p class="footer__contacts-description">Текст, Текст, Текст</p>
                     </address>
                     <address class="footer__contacts-body">
-                        <p class="footer__contacts-name">Контакты</p>
+                        <div class="footer__contacts-name">Контакты</div>
                         <p class="footer__contacts-description">Email: <a
                                 href="mailto:urban.dwelling@yandex.com">urban.dwelling@yandex.com</a></p>
                         <p class="footer__contacts-description">Телефон: <a href="tel:89999999999">8 (999)
@@ -275,7 +273,7 @@
 
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
-                        <p class="footer__contacts-name">Услуги</p>
+                        <li class="footer__contacts-name">Услуги</li>
                         <li class="footer__menu-item">
                             <a class="footer__menu-link footer__contacts-description" href="/">Каталог</a>
                         </li>
@@ -297,7 +295,7 @@
 
                 <div class="footer__information">
                     <div class="footer__information-links">
-                        <a class="footer__information-link" href="/">Публичная оферта</a></br>
+                        <a class="footer__information-link" href="/">Публичная оферта</a><br>
                         <a class="footer__information-link" href="/">Политика персональных данных</a>
                     </div>
                     <div class="footer__icons">
@@ -325,8 +323,9 @@
                     <div class="footer__extra_mobile visible-mobile">
                         <p class="footer__copyright">
                             Этот сайт защищен от спама службой reCAPTCHA Google.
+                        </p>
                         <p class="footer__copyright_line">Политика конфиденциальности/Условия
-                            предоставления услуг</p>
+                            предоставления услуг
                         </p>
                     </div>
                 </div>
@@ -344,7 +343,7 @@
                             <p class="footer__contacts-description">Текст, Текст, Текст</p>
                         </address>
                         <div class="footer__information-links">
-                            <a class="footer__information-link" href="/">Публичная оферта</a></br>
+                            <a class="footer__information-link" href="/">Публичная оферта</a><br>
                             <a class="footer__information-link" href="/">Политика персональных данных</a>
                         </div>
                     </div>
@@ -358,7 +357,7 @@
 
                     <nav class="footer__menu">
                         <ul class="footer__menu-list">
-                            <p class="footer__contacts-name">Услуги</p>
+                            <li class="footer__contacts-name">Услуги</li>
                             <li class="footer__menu-item">
                                 <a class="footer__menu-link footer__contacts-description" href="/">Каталог</a>
                             </li>
@@ -405,8 +404,9 @@
                     <div class="footer__extra_mobile">
                         <p class="footer__copyright">
                             Этот сайт защищен от спама службой reCAPTCHA Google.
+                        </p>
                         <p class="footer__copyright_line">Политика конфиденциальности/Условия
-                            предоставления услуг</p>
+                            предоставления услуг
                         </p>
                     </div>
                 </div>
